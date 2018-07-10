@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Marvel Test</title>
+  <title>ComicVine Test</title>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
       var comic = $(this).attr("data-comic");
 
       // Constructing a queryURL using the animal name
-      var queryURL = "https://gateway.marvel.com:443/v1/public/characters?name=" + comic + "&ts=" + ts + "&apikey=b6dc65d2bd49abd244836cf5eb355445&hash=" + hash;
+      var queryURL = "https://comicvine.gamespot.com/api/volumes/?api_key=6a6299d2d8c21c4fe93a807a64d81ca8e737c715&filter=gender:male,name:" + comic;
 
       // Performing an AJAX request with the queryURL
       $.ajax({
